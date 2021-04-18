@@ -2,9 +2,6 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import {  MenuIcon, XIcon } from "@heroicons/react/outline";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Navbar() {
   return (
