@@ -1,7 +1,6 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-import {  MenuIcon, XIcon } from "@heroicons/react/outline";
-
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export default function Navbar() {
   return (
@@ -23,13 +22,12 @@ export default function Navbar() {
                     </div>
                   </div>
                 </div>
-                    <div className="hidden md:block">
-                      <div className="flex  justify-evenly space-x-5 ">
-                        <a href="#">Features</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Contacts</a>
-                      </div>
-                   
+                <div className="hidden md:block">
+                  <div className="flex  justify-evenly space-x-5 ">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contacts</a>
+                  </div>
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-4 flex items-center md:ml-6">
@@ -42,7 +40,6 @@ export default function Navbar() {
                 <div className="mr-2 flex md:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="bg-gray-400 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                    {/* <span className="sr-only">Open main menu</span> */}
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (
@@ -55,12 +52,13 @@ export default function Navbar() {
 
             <Disclosure.Panel className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <div className="flex  justify-evenly space-x-5 ">
-                        <a href="#">Features</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Contacts</a>
-                      </div>
-              </div> </Disclosure.Panel>
+                <div className="flex  justify-evenly space-x-5 ">
+                  <a href="#">Features</a>
+                  <a href="#">Pricing</a>
+                  <a href="#">Contacts</a>
+                </div>
+              </div>{" "}
+            </Disclosure.Panel>
           </>
         )}
       </Disclosure>

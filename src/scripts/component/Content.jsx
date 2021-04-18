@@ -30,18 +30,26 @@ export default function Content() {
               <div className="relative lg:w-1/3 my-6 mx-auto max-w-3xl">
                 {/*content*/}
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <input type="text" class="form-input mx-10 mt-20 mb-3 bg-gray-100 px-4 py-3 rounded-xl"></input>
-                <input type="text" class="form-input mx-10 my-3 bg-gray-100 px-4 py-3 rounded-xl"></input>
-                <input type="text" class="form-input mx-10 my-3 bg-gray-100 px-4 py-3 rounded-xl"></input>
+                  <input
+                    type="text"
+                    class="form-input mx-10 mt-20 mb-3 bg-gray-100 px-4 py-3 rounded-xl"
+                  ></input>
+                  <input
+                    type="text"
+                    class="form-input mx-10 my-3 bg-gray-100 px-4 py-3 rounded-xl"
+                  ></input>
+                  <input
+                    type="text"
+                    class="form-input mx-10 my-3 bg-gray-100 px-4 py-3 rounded-xl"
+                  ></input>
 
-               <button
-                      className="text-white bg-blue-800 font-semibold rounded-xl my-5 mx-8 px-6 py-2 outline-none "
-                      type="button"
-                      onClick={() => setShowModal(false)}
-                    >
-                      Subscribe
-                    </button>
-                  
+                  <button
+                    className="text-white bg-blue-800 font-semibold rounded-xl my-5 mx-8 px-6 py-2 outline-none "
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Subscribe
+                  </button>
                 </div>
               </div>
             </div>
